@@ -36,3 +36,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Existing code...
 });
+// Function to initialize skill bars on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all skill elements
+    const skillElements = document.querySelectorAll('.skill');
+    
+    // For each skill element
+    skillElements.forEach(function(skill) {
+        // Get the level value from data-level attribute
+        const level = skill.getAttribute('data-level');
+        
+        // Find the skill-level div inside this skill element
+        const skillLevelBar = skill.querySelector('.skill-level');
+        
+        // Set the width of the skill-level div to the level percentage
+        if (skillLevelBar) {
+            skillLevelBar.style.width = level + '%';
+        }
+    });
+    
+    // Optional: Add animation effect
+    setTimeout(function() {
+        skillElements.forEach(function(skill) {
+            const skillLevelBar = skill.querySelector('.skill-level');
+            if (skillLevelBar) {
+                skillLevelBar.classList.add('animated');
+            }
+        });
+    }, 300);
+});
