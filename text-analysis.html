@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi Teja | Text Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ravi Teja</h1>
+            <p>Student at IIIT Hyderabad | Tech Enthusiast | Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="contain">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="text-analysis.html">Text Analysis</a></li>
+                <li><a href="assets/cv.pdf" target="_blank" class="cv-link">Download CV</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="card">
+            <h2>Text Analysis Tool</h2>
+            
+            <div class="form-group">
+                <label for="text-input">Enter your text (min 10,000 words):</label>
+                <textarea id="text-input" rows="15" required></textarea>
+            </div>
+            
+            <button id="analyze-btn" class="btn">Analyze Text</button>
+            
+            <div id="results" class="analysis-results">
+                <h3>Basic Statistics</h3>
+                <div id="basic-stats" class="stats-container"></div>
+                
+                <h3>Pronouns Count</h3>
+                <div id="pronouns" class="stats-container"></div>
+                
+                <h3>Prepositions Count</h3>
+                <div id="prepositions" class="stats-container"></div>
+                
+                <h3>Articles Count</h3>
+                <div id="articles" class="stats-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Ravi Teja. All rights reserved.</p>
+            <p>Hosted on GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="text-analysis.js"></script>
+</body>
+</html>
